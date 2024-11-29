@@ -1,29 +1,29 @@
-# Employee Management System
+# Employee Management System with Redux
 
-This application allows you to manage employee information by adding, updating, and viewing employee details.
-
-## Components:
-
-1. **EmployeeList** - Displays a list of employees.
-2. **AddEmployeeForm** - Adds a new employee.
-3. **UpdateEmployeeForm** - Updates an existing employee's details.
+This application allows users to manage employee information with Redux for state management. It supports adding, updating, and viewing employee details.
 
 ## Features:
+- **Add Employee**: Add new employees to the system.
+- **Update Employee**: Edit existing employee information.
+- **Employee List**: View the list of employees.
 
-- Add new employees.
-- Update employee details.
-- Display all employees.
+## Technologies Used:
+- **React**: Frontend framework for building the UI.
+- **Redux**: State management for shared data.
+- **Jest**: Testing framework for reducers.
 
 ## How to Run:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/pkoriris/Moringa_CRUD.git
+    git clone https://github.com/pkoriris/Wk2-Redux.git
     ```
+
 2. Install dependencies:
     ```bash
     npm install
     ```
+
 3. Run the application:
     ```bash
     npm start
@@ -31,12 +31,13 @@ This application allows you to manage employee information by adding, updating, 
 
 ## Project Structure:
 
-- `App.js`: Root component managing state and logic.
-- `EmployeeList.js`: Displays all employees.
-- `AddEmployeeForm.js`: Form to add new employees.
-- `UpdateEmployeeForm.js`: Form to update employee details.
+- **`src/actions/`**: Contains Redux actions.
+- **`src/reducers/`**: Contains Redux reducers.
+- **`src/store.js`**: Configures the Redux store.
+- **`src/App.js`**: Main component that connects Redux state and actions.
 
-## Technologies Used:
+## Testing:
 
-- React
-- PropTypes for prop validation
+Tests are written for Redux reducers using Jest. To run the tests:
+```bash
+npm test
